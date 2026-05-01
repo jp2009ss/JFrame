@@ -28,6 +28,8 @@ public class MenuInicial extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         jPanel1 = new javax.swing.JPanel();
+        jbCalculadoraIcon = new javax.swing.JButton();
+        jbTrianguloIcon = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jmCalculadora = new javax.swing.JMenuItem();
@@ -47,15 +49,44 @@ public class MenuInicial extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
 
+        jbCalculadoraIcon.setBackground(new java.awt.Color(153, 153, 153));
+        jbCalculadoraIcon.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
+        jbCalculadoraIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-calculadora-de-maçã-100.png"))); // NOI18N
+        jbCalculadoraIcon.setBorder(null);
+        jbCalculadoraIcon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbCalculadoraIconActionPerformed(evt);
+            }
+        });
+
+        jbTrianguloIcon.setBackground(new java.awt.Color(153, 153, 153));
+        jbTrianguloIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-cifra-de-fatura-100.png"))); // NOI18N
+        jbTrianguloIcon.setBorder(null);
+        jbTrianguloIcon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbTrianguloIconActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 491, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jbCalculadoraIcon)
+                .addGap(29, 29, 29)
+                .addComponent(jbTrianguloIcon)
+                .addContainerGap(256, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 453, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jbTrianguloIcon)
+                    .addComponent(jbCalculadoraIcon))
+                .addContainerGap(347, Short.MAX_VALUE))
         );
 
         jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
@@ -137,6 +168,20 @@ public class MenuInicial extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jmSairActionPerformed
 
+    private void jbCalculadoraIconActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCalculadoraIconActionPerformed
+       
+        Calculadora c = new Calculadora();
+        c.setVisible(true);
+        
+    }//GEN-LAST:event_jbCalculadoraIconActionPerformed
+
+    private void jbTrianguloIconActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbTrianguloIconActionPerformed
+        
+        Triangulo t = new Triangulo();
+        t.setVisible(true);
+        
+    }//GEN-LAST:event_jbTrianguloIconActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -181,6 +226,8 @@ public class MenuInicial extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton jbCalculadoraIcon;
+    private javax.swing.JButton jbTrianguloIcon;
     private javax.swing.JMenuItem jmCalculadora;
     private javax.swing.JMenuItem jmSair;
     private javax.swing.JMenuItem jmTriangulo;
