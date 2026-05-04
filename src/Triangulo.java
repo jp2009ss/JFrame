@@ -44,7 +44,7 @@ public class Triangulo extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("Calcular o Triangulo");
+        jLabel1.setText("Determine o Triangulo");
 
         jLabel2.setFont(new java.awt.Font("Segoe Print", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));

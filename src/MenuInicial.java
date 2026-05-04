@@ -47,12 +47,14 @@ public class MenuInicial extends javax.swing.JFrame {
         setTitle("Menu Inicial");
         setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setBackground(new java.awt.Color(204, 0, 51));
+        jPanel1.setForeground(new java.awt.Color(0, 0, 0));
 
         jbCalculadoraIcon.setBackground(new java.awt.Color(153, 153, 153));
         jbCalculadoraIcon.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
-        jbCalculadoraIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-calculadora-de-maçã-100.png"))); // NOI18N
+        jbCalculadoraIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/imagem.png"))); // NOI18N
         jbCalculadoraIcon.setBorder(null);
+        jbCalculadoraIcon.setBorderPainted(false);
         jbCalculadoraIcon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbCalculadoraIconActionPerformed(evt);
@@ -60,8 +62,10 @@ public class MenuInicial extends javax.swing.JFrame {
         });
 
         jbTrianguloIcon.setBackground(new java.awt.Color(153, 153, 153));
+        jbTrianguloIcon.setForeground(new java.awt.Color(153, 153, 153));
         jbTrianguloIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-cifra-de-fatura-100.png"))); // NOI18N
         jbTrianguloIcon.setBorder(null);
+        jbTrianguloIcon.setBorderPainted(false);
         jbTrianguloIcon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbTrianguloIconActionPerformed(evt);
@@ -74,23 +78,23 @@ public class MenuInicial extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jbCalculadoraIcon)
-                .addGap(29, 29, 29)
+                .addComponent(jbCalculadoraIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jbTrianguloIcon)
-                .addContainerGap(256, Short.MAX_VALUE))
+                .addContainerGap(309, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jbTrianguloIcon)
-                    .addComponent(jbCalculadoraIcon))
-                .addContainerGap(347, Short.MAX_VALUE))
+                    .addComponent(jbCalculadoraIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(301, Short.MAX_VALUE))
         );
 
-        jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
-        jMenuBar1.setForeground(new java.awt.Color(0, 0, 0));
+        jMenuBar1.setBackground(new java.awt.Color(0, 0, 0));
+        jMenuBar1.setForeground(new java.awt.Color(102, 102, 102));
 
         jMenu1.setText("Formulario");
 
