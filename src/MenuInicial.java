@@ -28,12 +28,14 @@ public class MenuInicial extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         jPanel1 = new javax.swing.JPanel();
-        jbCalculadoraIcon = new javax.swing.JButton();
-        jbTrianguloIcon = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jmCalculadora = new javax.swing.JMenuItem();
         jmTriangulo = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
@@ -50,25 +52,25 @@ public class MenuInicial extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 0, 51));
         jPanel1.setForeground(new java.awt.Color(0, 0, 0));
 
-        jbCalculadoraIcon.setBackground(new java.awt.Color(153, 153, 153));
-        jbCalculadoraIcon.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
-        jbCalculadoraIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/imagem.png"))); // NOI18N
-        jbCalculadoraIcon.setBorder(null);
-        jbCalculadoraIcon.setBorderPainted(false);
-        jbCalculadoraIcon.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
+        jButton1.setText("Iniciar Jogo");
+        jButton1.setBorder(null);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbCalculadoraIconActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
 
-        jbTrianguloIcon.setBackground(new java.awt.Color(153, 153, 153));
-        jbTrianguloIcon.setForeground(new java.awt.Color(153, 153, 153));
-        jbTrianguloIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-cifra-de-fatura-100.png"))); // NOI18N
-        jbTrianguloIcon.setBorder(null);
-        jbTrianguloIcon.setBorderPainted(false);
-        jbTrianguloIcon.addActionListener(new java.awt.event.ActionListener() {
+        jLabel1.setBackground(new java.awt.Color(204, 0, 51));
+        jLabel1.setForeground(new java.awt.Color(204, 0, 51));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pngwing.com (3).png"))); // NOI18N
+
+        jButton2.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
+        jButton2.setText("Encerrar");
+        jButton2.setBorder(null);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbTrianguloIconActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
 
@@ -77,20 +79,27 @@ public class MenuInicial extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jbCalculadoraIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jbTrianguloIcon)
-                .addContainerGap(309, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(141, 141, 141)
+                        .addComponent(jLabel1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(239, 239, 239)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(258, 258, 258)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(153, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jbTrianguloIcon)
-                    .addComponent(jbCalculadoraIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(301, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(101, 101, 101)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(100, Short.MAX_VALUE))
         );
 
         jMenuBar1.setBackground(new java.awt.Color(0, 0, 0));
@@ -113,6 +122,14 @@ public class MenuInicial extends javax.swing.JFrame {
             }
         });
         jMenu1.add(jmTriangulo);
+
+        jMenuItem1.setText("Pokédex");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem1);
 
         jMenuBar1.add(jMenu1);
 
@@ -172,19 +189,25 @@ public class MenuInicial extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jmSairActionPerformed
 
-    private void jbCalculadoraIconActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCalculadoraIconActionPerformed
-       
-        Calculadora c = new Calculadora();
-        c.setVisible(true);
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
-    }//GEN-LAST:event_jbCalculadoraIconActionPerformed
+        Pokédex p = new Pokédex();
+        p.setVisible(true);
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jbTrianguloIconActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbTrianguloIconActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         
-        Triangulo t = new Triangulo();
-        t.setVisible(true);
+        System.exit(0);
         
-    }//GEN-LAST:event_jbTrianguloIconActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        
+        Pokédex p = new Pokédex();
+        p.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -222,16 +245,18 @@ public class MenuInicial extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton jbCalculadoraIcon;
-    private javax.swing.JButton jbTrianguloIcon;
     private javax.swing.JMenuItem jmCalculadora;
     private javax.swing.JMenuItem jmSair;
     private javax.swing.JMenuItem jmTriangulo;

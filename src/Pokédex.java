@@ -25,52 +25,129 @@ public class Pokédex extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jMenuBar2 = new javax.swing.JMenuBar();
-        jMenu3 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
+        jbBulbassar = new javax.swing.JButton();
+        jbCharmander = new javax.swing.JButton();
+        jbGengar = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Pokédex");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        jPanel1.setBackground(new java.awt.Color(165, 210, 31));
+        jPanel1.setForeground(new java.awt.Color(0, 0, 0));
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI Black", 2, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pngwing.com (3).png"))); // NOI18N
+
+        jbBulbassar.setBackground(new java.awt.Color(165, 210, 31));
+        jbBulbassar.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
+        jbBulbassar.setForeground(new java.awt.Color(0, 0, 0));
+        jbBulbassar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pngwing.com (2).png"))); // NOI18N
+        jbBulbassar.setText("Calculadora");
+        jbBulbassar.setBorder(null);
+        jbBulbassar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbBulbassarActionPerformed(evt);
+            }
+        });
+
+        jbCharmander.setBackground(new java.awt.Color(165, 210, 31));
+        jbCharmander.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
+        jbCharmander.setForeground(new java.awt.Color(0, 0, 0));
+        jbCharmander.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pngwing.com (4).png"))); // NOI18N
+        jbCharmander.setText("Triangulo");
+        jbCharmander.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jbCharmander.setFocusPainted(false);
+        jbCharmander.setFocusable(false);
+        jbCharmander.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbCharmanderActionPerformed(evt);
+            }
+        });
+
+        jbGengar.setBackground(new java.awt.Color(165, 210, 31));
+        jbGengar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pngwing.com (5).png"))); // NOI18N
+        jbGengar.setBorder(null);
+        jbGengar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbGengarActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(98, 98, 98)
+                        .addComponent(jLabel2))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jbGengar)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jbBulbassar)
+                                .addGap(109, 109, 109)
+                                .addComponent(jbCharmander)))))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jbBulbassar)
+                    .addComponent(jbCharmander))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jbGengar)
+                .addContainerGap(420, Short.MAX_VALUE))
         );
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Grass texture Telifsiz Stok Vektörler.png"))); // NOI18N
-
-        jMenu3.setText("File");
-        jMenuBar2.add(jMenu3);
-
-        jMenu4.setText("Edit");
-        jMenuBar2.add(jMenu4);
-
-        setJMenuBar(jMenuBar2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLabel2)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jbBulbassarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbBulbassarActionPerformed
+        
+        Calculadora c = new Calculadora();
+        c.setVisible(true);
+        
+    }//GEN-LAST:event_jbBulbassarActionPerformed
+
+    private void jbCharmanderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCharmanderActionPerformed
+           
+        Triangulo t = new Triangulo();
+        t.setVisible(true);
+        
+    }//GEN-LAST:event_jbCharmanderActionPerformed
+
+    private void jbGengarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbGengarActionPerformed
+       
+        ComboBox c = new ComboBox();
+        c.setVisible(true);
+        
+    }//GEN-LAST:event_jbGengarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -109,9 +186,9 @@ public class Pokédex extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenuBar jMenuBar2;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton jbBulbassar;
+    private javax.swing.JButton jbCharmander;
+    private javax.swing.JButton jbGengar;
     // End of variables declaration//GEN-END:variables
 }
