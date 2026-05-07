@@ -152,7 +152,50 @@ public class Gravidade extends javax.swing.JFrame {
 
     private void jbCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCalcularActionPerformed
 
+        double pesoTerra = Double.parseDouble(txfPeso.getText());
         
+       double gravidade = 0;
+       
+       String planeta = cBPlanetas.getSelectedItem().toString();
+               
+               switch(planeta) {
+            case"Mercúrio":
+                gravidade = 3.6;
+                break;
+                
+                case"Vênus":
+                gravidade = 8.7;
+                break;
+                
+                case"Terra":
+                gravidade = 9.8;
+                break;
+                
+                case"Marte":
+                gravidade = 3.7;
+                break;
+                
+                case"Júpiter":
+                gravidade = 24.79;
+                break;
+                
+                case"Saturno":
+                gravidade = 10.44;
+                break;
+                
+                case"Urano":
+                gravidade = 8.69;
+                break;
+                
+                case"Netuno":
+                gravidade = 11.15;
+                break;
+                
+                case"Lua":
+                gravidade = 1.6;
+                break;
+            
+        }
         
     }//GEN-LAST:event_jbCalcularActionPerformed
 
