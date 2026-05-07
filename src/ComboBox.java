@@ -60,6 +60,11 @@ public class ComboBox extends javax.swing.JFrame {
         txfPokemonSelecionado.setBackground(new java.awt.Color(102, 102, 102));
         txfPokemonSelecionado.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
         txfPokemonSelecionado.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txfPokemonSelecionado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txfPokemonSelecionadoActionPerformed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
         jLabel2.setText("Pokémon Selecionado: ");
@@ -70,6 +75,11 @@ public class ComboBox extends javax.swing.JFrame {
         txfNovoPokemon.setBackground(new java.awt.Color(102, 102, 102));
         txfNovoPokemon.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
         txfNovoPokemon.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txfNovoPokemon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txfNovoPokemonActionPerformed(evt);
+            }
+        });
 
         jbLimpar.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
         jbLimpar.setText("Limpar");
@@ -161,7 +171,7 @@ public class ComboBox extends javax.swing.JFrame {
 
     private void jbLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbLimparActionPerformed
         
-        cBPokémon.removeItem(txfPokemonSelecionado);
+        cBPokémon.removeItem(txfPokemonSelecionado.getText().toString());
          JOptionPane.showMessageDialog(null,"Sucesso");
         
     }//GEN-LAST:event_jbLimparActionPerformed
@@ -172,6 +182,14 @@ public class ComboBox extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null,"Sucesso");
         
     }//GEN-LAST:event_jbSalvarActionPerformed
+
+    private void txfNovoPokemonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txfNovoPokemonActionPerformed
+       
+    }//GEN-LAST:event_txfNovoPokemonActionPerformed
+
+    private void txfPokemonSelecionadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txfPokemonSelecionadoActionPerformed
+     
+    }//GEN-LAST:event_txfPokemonSelecionadoActionPerformed
 
     /**
      * @param args the command line arguments
