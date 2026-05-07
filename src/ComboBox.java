@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -56,7 +59,7 @@ public class ComboBox extends javax.swing.JFrame {
         txfPokemonSelecionado.setEditable(false);
         txfPokemonSelecionado.setBackground(new java.awt.Color(102, 102, 102));
         txfPokemonSelecionado.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
-        txfPokemonSelecionado.setBorder(null);
+        txfPokemonSelecionado.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
         jLabel2.setText("Pokémon Selecionado: ");
@@ -66,7 +69,7 @@ public class ComboBox extends javax.swing.JFrame {
 
         txfNovoPokemon.setBackground(new java.awt.Color(102, 102, 102));
         txfNovoPokemon.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
-        txfNovoPokemon.setBorder(null);
+        txfNovoPokemon.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jbLimpar.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
         jbLimpar.setText("Limpar");
@@ -131,7 +134,7 @@ public class ComboBox extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbLimpar)
                     .addComponent(jbSalvar))
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addContainerGap(72, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -158,13 +161,15 @@ public class ComboBox extends javax.swing.JFrame {
 
     private void jbLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbLimparActionPerformed
         
-        
+        cBPokémon.removeItem(txfPokemonSelecionado);
+         JOptionPane.showMessageDialog(null,"Sucesso");
         
     }//GEN-LAST:event_jbLimparActionPerformed
 
     private void jbSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSalvarActionPerformed
         
         cBPokémon.addItem(txfNovoPokemon.getText());
+        JOptionPane.showMessageDialog(null,"Sucesso");
         
     }//GEN-LAST:event_jbSalvarActionPerformed
 

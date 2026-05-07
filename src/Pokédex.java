@@ -30,6 +30,7 @@ public class Pokédex extends javax.swing.JFrame {
         jbBulbassar = new javax.swing.JButton();
         jbCharmander = new javax.swing.JButton();
         jbGengar = new javax.swing.JButton();
+        jbSnorlax = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Pokédex");
@@ -68,11 +69,26 @@ public class Pokédex extends javax.swing.JFrame {
         });
 
         jbGengar.setBackground(new java.awt.Color(165, 210, 31));
+        jbGengar.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
+        jbGengar.setForeground(new java.awt.Color(0, 0, 0));
         jbGengar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pngwing.com (5).png"))); // NOI18N
+        jbGengar.setText("Combo Box");
         jbGengar.setBorder(null);
         jbGengar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbGengarActionPerformed(evt);
+            }
+        });
+
+        jbSnorlax.setBackground(new java.awt.Color(165, 210, 31));
+        jbSnorlax.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
+        jbSnorlax.setForeground(new java.awt.Color(0, 0, 0));
+        jbSnorlax.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pngwing.com (6).png"))); // NOI18N
+        jbSnorlax.setText("Gravidade");
+        jbSnorlax.setBorder(null);
+        jbSnorlax.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbSnorlaxActionPerformed(evt);
             }
         });
 
@@ -87,12 +103,15 @@ public class Pokédex extends javax.swing.JFrame {
                         .addComponent(jLabel2))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(26, 26, 26)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jbGengar)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jbBulbassar)
-                                .addGap(109, 109, 109)
-                                .addComponent(jbCharmander)))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jbCharmander))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jbGengar)
+                                .addGap(90, 90, 90)
+                                .addComponent(jbSnorlax)))))
                 .addContainerGap(38, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -101,12 +120,14 @@ public class Pokédex extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbBulbassar)
                     .addComponent(jbCharmander))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jbGengar)
-                .addContainerGap(420, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jbGengar)
+                    .addComponent(jbSnorlax))
+                .addContainerGap(497, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -149,6 +170,13 @@ public class Pokédex extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jbGengarActionPerformed
 
+    private void jbSnorlaxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSnorlaxActionPerformed
+        
+        Gravidade g = new Gravidade();
+        g.setVisible(true);
+        
+    }//GEN-LAST:event_jbSnorlaxActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -190,5 +218,6 @@ public class Pokédex extends javax.swing.JFrame {
     private javax.swing.JButton jbBulbassar;
     private javax.swing.JButton jbCharmander;
     private javax.swing.JButton jbGengar;
+    private javax.swing.JButton jbSnorlax;
     // End of variables declaration//GEN-END:variables
 }
