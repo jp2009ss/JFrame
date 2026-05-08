@@ -83,7 +83,7 @@ public class Pokédex extends javax.swing.JFrame {
         jbSnorlax.setBackground(new java.awt.Color(165, 210, 31));
         jbSnorlax.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
         jbSnorlax.setForeground(new java.awt.Color(0, 0, 0));
-        jbSnorlax.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pngwing.com (6).png"))); // NOI18N
+        jbSnorlax.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pngwing.com (7).png"))); // NOI18N
         jbSnorlax.setText("Gravidade");
         jbSnorlax.setBorder(null);
         jbSnorlax.addActionListener(new java.awt.event.ActionListener() {
@@ -112,7 +112,7 @@ public class Pokédex extends javax.swing.JFrame {
                                 .addComponent(jbGengar)
                                 .addGap(90, 90, 90)
                                 .addComponent(jbSnorlax)))))
-                .addContainerGap(38, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -127,7 +127,7 @@ public class Pokédex extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbGengar)
                     .addComponent(jbSnorlax))
-                .addContainerGap(497, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
