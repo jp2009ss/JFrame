@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -151,8 +154,8 @@ public class Gravidade extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCalcularActionPerformed
-
-        double pesoTerra = Double.parseDouble(txfPeso.getText());
+try{
+    double pesoTerra = Double.parseDouble(txfPeso.getText());
         
        double gravidade = 0;
        
@@ -196,6 +199,15 @@ public class Gravidade extends javax.swing.JFrame {
                 break;
             
         }
+         //Formula
+         double pesoPlaneta = (pesoTerra / 10) * gravidade;
+         
+         //JOption
+         JOptionPane.showMessageDialog(null, "O seu peso em " + planeta +"é: " +String.format("%.2f", pesoPlaneta) +"Kg: ");
+        
+}catch(NumberFormatException ex){
+    JOptionPane.showMessageDialog(null, "Digite um valor Valido!!!");
+}
         
     }//GEN-LAST:event_jbCalcularActionPerformed
 
