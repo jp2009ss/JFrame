@@ -65,7 +65,7 @@ public class Gravidade extends javax.swing.JFrame {
         cBPlanetas.setBackground(new java.awt.Color(255, 255, 255));
         cBPlanetas.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
         cBPlanetas.setForeground(new java.awt.Color(0, 0, 0));
-        cBPlanetas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mercúrio", "Urano", "Terra", "Vênus", "Marte", "Júpiter", "Saturno", "Netuno", "Lua " }));
+        cBPlanetas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mercúrio", "Urano", "Terra", "Vênus", "Marte", "Júpiter", "Saturno", "Netuno", "Lua" }));
         cBPlanetas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cBPlanetasActionPerformed(evt);

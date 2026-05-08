@@ -161,7 +161,7 @@
                 <StringItem index="5" value="J&#xfa;piter"/>
                 <StringItem index="6" value="Saturno"/>
                 <StringItem index="7" value="Netuno"/>
-                <StringItem index="8" value="Lua "/>
+                <StringItem index="8" value="Lua"/>
               </StringArray>
             </Property>
           </Properties>
