@@ -4,7 +4,7 @@ public class Triangulo extends javax.swing.JFrame {
     public Triangulo() {
         initComponents();
     }
-//
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
