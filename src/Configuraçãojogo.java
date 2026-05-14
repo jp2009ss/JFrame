@@ -171,8 +171,16 @@ public class Configuraçãojogo extends javax.swing.JFrame {
             dificuldade = "Dificil";
         }
         
+         //Formação da Mensagem
+        String mensagem = "";
+        mensagem += "Musica: "+ ckbAtivarMusica.isSelected()+".\n";
+        mensagem += "Legenda: "+ ckbAtivarLegenda.isSelected()+".\n";
+        mensagem += "Tela Cheia: "+ ckbTelaCheia.isSelected()+".\n";
         
+        mensagem += "Dificuldade: "+dificuldade+".\n";
+        mensagem += "Volume: "+ jsVolume.getValue()+".";
         
+        JOptionPane.showMessageDialog(null, mensagem);
     }//GEN-LAST:event_jbSalvarActionPerformed
 
 
