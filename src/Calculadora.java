@@ -240,6 +240,7 @@ public class Calculadora extends javax.swing.JFrame {
         txfResultado.setText(String.valueOf(resultado));
     }//GEN-LAST:event_jbDividirActionPerformed
 
+    
 
     public static void main(String args[]) {
 
